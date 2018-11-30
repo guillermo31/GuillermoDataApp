@@ -14,6 +14,22 @@ class BucketItemCell: UITableViewCell
     @IBOutlet weak var bucketItemSymbol : UILabel!
     @IBOutlet weak var bucketItemSignature : UILabel!
     
+    private func updateCellView() -> Void
+    {
+        if(currentBucketItem != nil)
+        {
+            bucketItemSignature.text = currentBucketItem.itemAuthor
+            bucketItemText.text = currentBucketItem.itemContents
+        }
+        else
+        {
+            bucketItemSignature.text = "Author goes here"
+            bucketItemText.text = "Bucket item contents here"
+        }
+        
+        bucketItemSymbol.text = randomEmoji()
+    }
+    
     var currentBucketItem : BucketItem!
     {
         didSet
