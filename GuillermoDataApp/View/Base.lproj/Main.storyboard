@@ -63,6 +63,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="3xO-lY-OVZ" id="0BQ-eU-Xv3"/>
+                                    <outlet property="bucketItemSymbol" destination="1rF-4D-WQB" id="Xsm-iy-6ep"/>
+                                    <outlet property="bucketItemText" destination="att-i5-kqA" id="cQ8-kz-nir"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
